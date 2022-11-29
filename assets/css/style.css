@@ -14,7 +14,7 @@ body {
 header {
     display: grid;
     justify-items: center;
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(238, 238, 238);
     border-bottom: 2px solid gray;
 }
 
@@ -172,6 +172,10 @@ button:hover {
     cursor: pointer;
 }
 
+.btn_replay {
+    margin: 0 2rem;
+}
+
 @media screen AND (max-width:1000px) {
 
     h1 {
@@ -180,6 +184,10 @@ button:hover {
 
     h2 {
         font-size: 1rem;
+    }
+
+    h4 {
+        font-weight: 600;
     }
 
     .container {
