@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ShiFuMi by Clara</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-header">
+                <div class="headerImg">
+                    <img id="headerImg" src="assets/img/shifumi.png" alt="image d'entête">
+                </div>
+                <h1> Pierre - Papier - Ciseaux - Lezard - Spock </h1>
+            </div>
+            <div class="headerText">
+                <ul class="rulesUl">
+                    <legend>Règles du jeu : </legend> 
+                    <li>- La pierre écrase le lézard</li>
+                    <li>- Le lézard mange le papier</li>
+                    <li>- Le papier désavoue Spock</li>
+                    <li>- Spock écrase les ciseaux</li>
+                    <li>- La pierre écrase les ciseaux</li>
+                    <li>- Les ciseaux décapitent le lézard</li>
+                    <li>- Le lézard empoisonne Spock</li>
+                    <li>- Spock détruit la pierre</li>
+                    <li>- Le papier enveloppe la pierre</li>
+                    <li>- Les ciseaux coupent le papier</li>
+                      
+                </ul>
+            </div>
+        </header>
+        <section class="gameAction">
+            <h2> Choisissez votre action : </h2>
+            <ul class="actionUl">
+                <li>
+                    <button class="btn" value="1" type="button">
+                        <img class="gameImg" src="assets/img/rock.png" alt="rock">
+                        <h3> Pierre </h3>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" value="2" type="button">
+                        <img class="gameImg" src="assets/img/paper.png" alt="paper">
+                        <h3> Papier </h3>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" value="3" type="button">
+                        <img  class="gameImg" src="assets/img/scissors.png" alt="scissors">
+                        <h3> Ciseaux </h3>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" value="4" type="button">
+                        <img  class="gameImg" src="assets/img/lezard.png" alt="lezard">
+                        <h3> Lezard </h3>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" value="5" type="button">
+                        <img  class="gameImg" src="assets/img/vulcain.png" alt="Spock">
+                        <h3> Spock </h3>
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section class="gameResult">
+        </section>
+    
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
