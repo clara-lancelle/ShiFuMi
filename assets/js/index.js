@@ -7,6 +7,19 @@
 
 // create obj game 
 
+
+let collapse = document.querySelector('.collapse-rules');
+collapse.innerHTML = ' Fermer ';
+collapse.addEventListener('click', () => {
+    let collapseUl = document.querySelector('.rulesUl');
+    collapseUl.classList.toggle('close');
+    if(collapseUl.classList.contains('close')) {
+        collapse.innerHTML = ' Afficher les règles ';
+    }else {
+        collapse.innerHTML = ' Fermer ';
+    }
+})
+
 let game = {
     init: function () {
 
@@ -17,13 +30,18 @@ let game = {
         //compteur de victoire :
         this.text_victory = '';
         this.count = 0;
+        if(localStorage.getItem("victories") !== null) {
+            this.victories = Number(localStorage.getItem("victories"));
 
-
+        }else {
+            this.victories = 0;
+        }
+       
         this.actions = {
             '1': { nom: 'Pierre' },
             '2': { nom: 'Papier' },
             '3': { nom: 'Ciseaux' },
-            '4': { nom: 'Lezard' },
+            '4': { nom: 'Lézard' },
             '5': { nom: 'Spock' },
         };
 
@@ -66,8 +84,9 @@ let game = {
                     this.sectionH4 = document.createElement('h4');
                     this.sectionH4.innerHTML += this.result(this.vicUser, this.vicIa);
                     this.section.appendChild(this.sectionH4);
-                    console.log(this.sectionP);
+                    this.victories++;
                     
+                    localStorage.setItem('victories', localStorage.getItem("victories") || "");
                 }
             },
         score: function (uc, cc) {
