@@ -95,7 +95,7 @@ section.gameResult {
     grid-template-rows: 33% 33% 33%;
     grid-auto-flow: row;
     background-color: rgb(238, 238, 238);
-    height: 30vh;
+    height: 40vh;
 
 }
 
@@ -217,7 +217,7 @@ footer {
     font-size: 0.8rem;
     color: #eeeeee;
     margin: 0 10rem;
-    position: sticky;
+    position: fixed;
     bottom: 0;
 }
 
