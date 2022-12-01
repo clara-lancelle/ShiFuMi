@@ -24,7 +24,7 @@ div.header-header {
     align-items: center;
     justify-items: center;
     padding: 1.5rem 0;
-    background-color: rgb(238 181 49);
+    background-color: rgb(229 160 0);
     box-shadow: 0 10px 10px rgb(120 78 35);
     z-index: 1;
 }
@@ -95,7 +95,7 @@ section.gameResult {
     grid-template-rows: 33% 33% 33%;
     grid-auto-flow: row;
     background-color: rgb(238, 238, 238);
-    height: 33vh;
+    height: 30vh;
 
 }
 
@@ -108,7 +108,6 @@ section p {
 section h4 {
     grid-row: 1;
     grid-column: 1/-1;
-    background-color: rgb(104, 22, 39);
     box-shadow: 0 3px 5px rgb(138 136 137), 0 -3px 5px rgb(138 136 137);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -116,6 +115,8 @@ section h4 {
     color: rgb(255, 255, 255);
     text-align: center;
     align-items: center;
+    align-self: center;
+    padding: 0.3rem;
 }
 
 .win {
@@ -127,7 +128,7 @@ section h4 {
 
 section p.equal {
 
-    background-color: rgb(207 159 48);
+    background-color:rgb(229 160 0);
     border: #ffffff 3px solid;
     color: white;
 }
@@ -202,10 +203,19 @@ li button:hover {
 }
 
 .btn_replay {
-    margin: 0.4rem 0 0.5rem 3rem;
+    margin-left: 3rem;
     background-color: aliceblue;
     border-radius: 5px;
     padding: 0.5rem;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(133 24 24);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #eeeeee;
 }
 
 @media screen AND (max-width:1000px) {
@@ -280,6 +290,8 @@ li button:hover {
     section.gameResult {
         grid-template-columns: 1fr 1fr;
         grid-row: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5,20%);
+        height: 40vh;
 
     }
 
