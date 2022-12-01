@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: rgb(238, 238, 238);
 }
 
 .container {
@@ -14,8 +15,7 @@ body {
 header {
     display: grid;
     justify-items: center;
-    background-color: rgb(238, 238, 238);
-    border-bottom: 2px solid gray;
+
 }
 
 div.header-header {
@@ -34,6 +34,7 @@ div.header-header {
     grid-auto-flow: column;
     column-gap: 2rem;
     align-items: center;
+    padding: 0.5rem;
 }
 
 h1 {
@@ -92,10 +93,10 @@ section.gameResult {
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 30% 30% 30%;
     grid-auto-flow: row;
-    background-color: rgb(238, 238, 238);
-    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    height: 44vh;
 
 }
 
@@ -216,7 +217,6 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     color: #eeeeee;
-    margin: 0 10rem;
     position: fixed;
     bottom: 0;
 }
